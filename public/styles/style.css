@@ -1,83 +1,216 @@
 * {
-    font-family: Roboto;
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    background-color: #EAC926;
-    margin: 0;
-    padding: 0;
+/* HEADER */
+
+header {
+  background-color: #eac926;
+}
+/* nav 1 */
+.nav1 {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.nav1-line1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-header h2{
-    font-size: 12px;
-    text-align: center;
-    margin:20px;
+.logo {
+  max-width: 360px;
+  width: 35%;
+  margin: 3px;
 }
-.burger-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.search {
+  max-width: 200px;
+  width: 40%;
+  margin: 3px;
 }
-
-.fa-bars{
-    background-color: #0000ff;
-    color: #ffffff;
-    width: 40px;
-    height: 30px;
-    text-align: center;
-    margin-top: 5px;
-    padding-top: 10px;
-    border-radius: 15%;
-}
-img {
-    display: inline-block;
-    max-width: 360px;
-}
-.UltimaVista h2, .Ofertas h2{
-    font-size: 24px;
-    text-align: center;
+.nav-1-line2 {
+  text-align: center;
+  font-weight: 400;
+  margin: 10px 0;
+  align-self: center;
 }
 
-.Footer1 p{
-    font-size: 12px;
+.burger-menu {
+  background-color: #0000ff;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  padding: 10px;
+  font-size: 20px;
 }
 
-.Precio{
-    font-size: 18px;
-} 
-
-.Descuentos, .Descripciones{
-    font-size: 16 px;
+.fa-bars {
+  color: #ffffff;
 }
 
-.links *{
-    text-decoration:none;
-    list-style-type: none;
-    padding: 0;
+/* nav 2 */
+.nav2,.nav3{
+    margin: 6px;
+}
+
+.links {
+    margin: 5px;
+    list-style: none;
+  }
+.links a{
     text-decoration: none;
-    color: #000000
+    padding: 0;
+    margin: 0 2px;
+    color: #000000;
+  }
+  .links-conteiner{
+      display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* MAIN */
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+.UltimaVista h2,
+.Ofertas h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.Footer1 p {
+  font-size: 12px;
+}
+
+.Precio {
+  font-size: 18px;
+}
+
+.Descuentos,
+.Descripciones {
+  font-size: 16 px;
 }
 
 
-ul {
-margin-bottom: 15px;
-list-style-type: none;
-color: #000000
-}
 
 footer {
-    text-align: center;
+  text-align: center;
 }
-footer i{
-    width: 2em;
-    height: 2em;
-    color:#0000ff;
-    margin-top: 12px;
+footer i {
+  width: 2em;
+  height: 2em;
+  color: #0000ff;
+  margin-top: 12px;
 }
 
-.copy{
-    margin-top: 12px;
+.copy {
+  margin-top: 12px;
+}
+
+main * {
+  width: 90%;
+  margin: auto;
+}
+
+.UltimaVista__Producto {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.Ofertas__Producto,
+.UltimaVista__Producto {
+  box-shadow: 0px 0px 10px rgb(56, 24, 24);
+}
+
+.Detalles {
+  border-top: #ebebeb 1px solid;
+  padding: 15px;
+}
+
+.Detalles {
+  display: none;
+}
+
+.hero {
+  display: none;
+}
+
+.fa-car-side {
+  color: rgb(91, 122, 40);
+}
+
+@media (min-width: 361px) {
+  .Detalles {
+    display: inline-block;
+  }
+
+  .hero {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 767px) {
+    .links-conteiner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .nav2 *,.nav3 *{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .nav-1-line2 {
+        max-width: 31%;
+        text-align: right;
+      }
+      .burger-menu{
+          display: none;
+      }
+}
+
+@media (min-width: 1200px) {
+    .links-conteiner,.nav1 {
+        max-width: 1200px;
+        margin: auto;
+       }
+
+       .links {
+        margin: 10px;
+        list-style: none;
+      }
+    .links a{
+        text-decoration: none;
+        padding: 0;
+        margin: 0 2px;
+        color: #000000;
+        font-size: 22px;
+      }
+      .nav-1-line2 {
+        max-width: none;
+      }
+      .nav1-line1{
+          width: 100%;
+          align-items: center;
+      }
 }
