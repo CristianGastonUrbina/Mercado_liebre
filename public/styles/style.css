@@ -28,17 +28,15 @@ header {
 }
 
 .logo {
-
   width: 45%;
   margin: 3px;
-
 }
 .search {
   width: 45%;
   margin: 3px;
 }
 
-input{
+input {
   width: calc(100% - 19px);
   margin-right: 3px;
 }
@@ -86,9 +84,12 @@ input{
 
 /* BANER */
 
-
+.hero img {
+  width: 100vw;
+}
 
 /* MAIN */
+
 img {
   display: inline-block;
   max-width: 100%;
@@ -97,32 +98,59 @@ img {
 .Ofertas h2 {
   font-size: 24px;
   text-align: left;
-  padding:10px;
-
+  padding: 10px;
 }
 
-.logo2  {
+.logo2 {
   align-self: right;
   position: absolute;
-  right: 10px;;
+  right: 10px;
   top: -10px;
-
-}
-
-
-.Footer1 p {
-  font-size: 12px;
 }
 
 .Precio {
   font-size: 18px;
-  margin: 4px;
+  margin-right: 4px;
 }
-
 .Descuentos,
-.Descripciones {
+.Descripcion {
   font-size: 16 px;
   width: 100%;
+  margin-top: 10px;
+}
+main > * > * {
+  width: 90%;
+  margin: auto;
+}
+
+.UltimaVista__Producto,
+.Ofertas__Producto {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px rgb(56, 24, 24);
+}
+
+.Detalles {
+  border-top: #ebebeb 1px solid;
+  padding: 15px;
+  position: relative;
+  display: none;
+}
+
+.fa-truck {
+  color: rgb(135, 202, 28);
+}
+
+
+/* FOOTER */
+
+
+.Footer1 p {
+  font-size: 12px;
 }
 
 footer {
@@ -139,60 +167,26 @@ footer i {
   margin-top: 12px;
 }
 
-main > * > *{
-  width: 90%;
-  margin: auto;
-}
+/* MEDIA QUERIES */
 
-.UltimaVista__Producto, .Ofertas__Producto {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  box-shadow: 0px 0px 10px rgb(56, 24, 24);
-}
-
-
-.Detalles {
-  border-top: #ebebeb 1px solid;
-  padding: 15px;
-  position: relative;
-  display: none;
-  
-}
-
-
-
-.hero img {
-
-  width: 100vw;
-}
-
-.fa-truck {
-  color: rgb(135, 202, 28);
-}
 
 @media (min-width: 361px) {
-
-  .Detalles{
+  .Detalles {
     display: inline-block;
   }
 
-
-   .pd-conteiner {
+  .pd-conteiner {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
+    margin: 10px 0;
+  }
 
-  } 
-
-   .Precio{
+  .Precio {
     max-width: 35%;
-  } 
-  .Descuento{
+  }
+  .Descuento {
     max-width: 70%;
     color: rgb(135, 202, 28);
     margin: 4px;
@@ -212,34 +206,33 @@ main > * > *{
   .logo {
     width: 30%;
     margin: 3px;
-
   }
   .search {
     width: 30%;
     margin: 3px;
   }
 
-  .UltimaVista,.Ofertas{
+  .UltimaVista,
+  .Ofertas {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .UltimaVista__Producto,.Ofertas__Producto 
-{
-  max-width: 40%;
-}
+  .UltimaVista__Producto,
+  .Ofertas__Producto {
+    max-width: 40%;
+  }
 
-.nav1-line1{
-  width: 100%;
-  justify-content: space-between;
-}
-
+  .nav1-line1 {
+    width: 100%;
+    justify-content: space-between;
+  }
 
   .nav2 *,
   .nav3 * {
     display: flex;
     flex-wrap: wrap;
-    align-self: center
+    align-self: center;
   }
   .nav-1-line2 {
     width: 35%;
@@ -256,13 +249,12 @@ main > * > *{
   .nav1 {
     max-width: 1200px;
     margin: auto;
-
   }
 
-  .UltimaVista__Producto,.Ofertas__Producto 
-{
-  max-width: 20%;
-}
+  .UltimaVista__Producto,
+  .Ofertas__Producto {
+    max-width: 20%;
+  }
 
   .links {
     margin: 10px;
