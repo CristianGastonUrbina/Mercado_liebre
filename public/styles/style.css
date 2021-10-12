@@ -183,7 +183,9 @@ main > * > * {
 
 
 /* FOOTER */
-
+.Footer1{
+  margin:15px;
+}
 
 .Footer1 p {
   font-size: 12px;
@@ -300,6 +302,7 @@ footer i {
 
   .propaganda{
     flex-wrap: nowrap;
+    
   }
   .UltimaVista__Producto,
   .Ofertas__Producto {
