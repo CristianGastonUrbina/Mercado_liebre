@@ -192,6 +192,8 @@ main > * > * {
 .propaganda{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 footer {
   text-align: center;
@@ -296,6 +298,9 @@ footer i {
     margin: auto;
   }
 
+  .propaganda{
+    flex-wrap: nowrap;
+  }
   .UltimaVista__Producto,
   .Ofertas__Producto {
     max-width: 20%;
@@ -478,22 +483,5 @@ background-color: #0022AA;
 
 }
   
-/*! BORRAR */
-.footer{
-  display: flex;
-  height: 300px;
-  width: 300px;
-  background-color: rgb(122, 122, 199);
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer div{
-  width: 30%;
-height: 50px;
-  background-color: rgb(153, 99, 99);
-  border-right: 1px solid #000;
-
-}
 
 
